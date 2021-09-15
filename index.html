@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de divisas</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1 id="title">Conversor de divisas</h1>
+    <div class="image">
+        <img id="image" src="./img/img.png" alt="#" >
+    </div>
+    <div class="content">
+        <h4 class="sub">
+CANTIDAD: 
+        </h4> <input type="number" class="cantidad" min="0" max="1000" value="0"
+    onchange="convertir()">
+  <select class="elije-moneda-one" onchange="convertir()">
+      <option value="1">Peso mexicano</option>
+      <option value="2">Dolar</option>
+      <option value="3">Peso colombiano</option>
+      <option value="4">Euro</option>
+      <option value="5">Libra Esterlina</option>
+  </select>
+  <select class="elije-moneda-two" onchange="convertir()" >
+    <option value="1">Peso mexicano</option>
+    <option value="2">Dolar</option>
+    <option value="3">Peso colombiano</option>
+    <option value="4">Euro</option>
+    <option value="5">Libra Esterlina</option>
+</select><br>
+
+<h1 class="resultado">$0.00</h1>
+    </div>
+    
+</body>
+</html>
